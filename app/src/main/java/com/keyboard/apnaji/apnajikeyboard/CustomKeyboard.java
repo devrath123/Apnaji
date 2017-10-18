@@ -72,7 +72,6 @@ public class CustomKeyboard extends InputMethodService implements TabLayout.OnTa
     private LinearLayout.LayoutParams params, layoutParamsKeyboard;
     InputConnection currentInputConnection;
     private DatabaseHelper databaseHelper;
-    Pager_DynamicViews_modified pager;
     private LinearLayout level2, level5;
 
 
@@ -333,7 +332,7 @@ public class CustomKeyboard extends InputMethodService implements TabLayout.OnTa
 
     @Override
     public void onStartInputView(EditorInfo info, boolean restarting) {
-        System.out.println("pager: onStartInputView: ================");
+       /* System.out.println("pager: onStartInputView: ================");
         String[] mimeTypes = EditorInfoCompat.getContentMimeTypes(info);
 
         boolean gifSupported = false;
@@ -347,7 +346,7 @@ public class CustomKeyboard extends InputMethodService implements TabLayout.OnTa
             // the target editor supports GIFs. enable corresponding content
         } else {
             // the target editor does not support GIFs. disable corresponding content
-        }
+        }*/
     }
 
     public static File getFileForResource(
@@ -693,10 +692,8 @@ public class CustomKeyboard extends InputMethodService implements TabLayout.OnTa
                 if (btn_num_switch.getTag().equals("alphabetical")) {
 
                     if (btn_caps.getTag().equals("uppercase")) {
-//                    edt_entered_text.getText().append("F");
                         currentInputConnection.commitText("F", 0);
                     } else if (btn_caps.getTag().equals("lowercase")) {
-//                    edt_entered_text.getText().append("f");
                         currentInputConnection.commitText("f", 0);
                     }
                 } else if (btn_num_switch.getTag().equals("numeric")) {
