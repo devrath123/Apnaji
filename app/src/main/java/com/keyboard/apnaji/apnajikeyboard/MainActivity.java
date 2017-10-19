@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         WINDOW_WIDTH = displayMetrics.widthPixels;
 
         databaseHelper = new DatabaseHelper(this);
-        System.out.println("PAGER: TABLECOUNT: "+ databaseHelper.getProfilesCount());
+        //System.out.println("PAGER: TABLECOUNT: "+ databaseHelper.getProfilesCount());
         if(databaseHelper.getProfilesCount() <= 0)
         {
             deleteDatabase(databaseHelper.DB_NAME);
