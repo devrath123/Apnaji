@@ -35,10 +35,8 @@ sonarqube {
     properties {
         property "sonar.projectName", "ApnajiKeyboard"
         property "sonar.projectKey", "com.keyboard.apnaji.apnajikeyboard"
-        property "sonar.host.url", "https://sonarcloud.io/organizations/devrath123-github/projects"
-        property "sonar.sources", "src/main/"
-        property "sonar.login", "admin"
-        property "sonar.password", "admin"
+        property "sonar.host.url", "https://localhost:9000"
+
 
     }
 }
