@@ -36,7 +36,7 @@ sonarqube {
         property "sonar.projectName", "ApnajiKeyboard"
         property "sonar.projectKey", "com.keyboard.apnaji.apnajikeyboard"
         property "sonar.host.url", "https://localhost:9000"
-
+        property "sonar.sources","src/main/java"
 
     }
 }
